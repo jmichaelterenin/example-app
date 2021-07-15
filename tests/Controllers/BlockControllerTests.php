@@ -142,7 +142,7 @@ class BlockControllerTests extends TestCase {
   public function testStoreActionPreventsOverlappingAppointments() {
 
     $response = $this->call('POST', 'api/blocks/store', array(
-        'starts_at' => '2021-08-10 13:00:00',
+        'starts_at' => '2021-08-10 15:30:00',
         'length' => 60,
         'block_type' => 'appointment',
         'clinic_id' => 10425,
@@ -159,7 +159,7 @@ class BlockControllerTests extends TestCase {
   public function testStoreActionPreventsAppointmentOutsideBusinessHours() {
 
     $response = $this->call('POST', 'api/blocks/store', array(
-        'starts_at' => '2021-07-21 08:30:00',
+        'starts_at' => '2021-07-21 08:00:00',
         'length' => 60,
         'block_type' => 'appointment',
         'clinic_id' => 10425,
