@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Block;
 use Illuminate\Http\Request;
 use App\Service\SchedulingService;
-use Carbon\Carbon;
 use Exception;
 
 class BlockController extends Controller
