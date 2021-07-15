@@ -63,11 +63,6 @@ class SchedulingService implements SchedulingServiceInterface
         ]);            
     }
 
-    public function getAvailable($clinic_id, $query_date) 
-    {
-        
-    }
-
     /**
      * Check if the requested appointment time is available based on the time slots
      * 
